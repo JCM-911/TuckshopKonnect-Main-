@@ -424,7 +424,7 @@
         function logout() {
             sessionStorage.clear();
             localStorage.clear();
-            window.location.href = 'login.html';
+            window.location.href = 'parent login.html';
         }
 
         function loadParentData() {
@@ -432,7 +432,7 @@
             
             if (!parentData) {
                 alert('Session expired. Please login again.');
-                window.location.href = 'login.html';
+                window.location.href = 'parent login.html';
                 return;
             }
             
@@ -526,4 +526,5 @@
         });
     </script>
 </body>
+
 </html>
